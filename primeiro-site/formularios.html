@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form name="form1" method="post" action="">
+        <input name="oculto" type="hidden" value="cliente X">
+        Nome: <input type="text" name="nome" /><br/>
+        Senha: <input type="password" name="senha" /><br/>
+        E-Mail: <input type="email" name="usermail" /><br/>
+        Url: <input type="url" name="homepage" />
+        <input type="submit" value="Enviar" /><hr>
+        <p>Escolha um produto:</p> <!--A função checkbox o usuário pode marcar mais de uma opção-->
+        <input type="checkbox" name="produtos" value="Roupas" />Roupas<br/>
+        <input type="checkbox" name="produtos" value="Calçados" />Calçados<br/>
+        <input name="Botão" type="button" value="Clique Aqui" onclick="alert('Formulário enviado')" /> <!--mensagem na tela-->
+        <br/><hr>
+        <p>Escolha um arquivo <input name="arquivo" type="file" /></p>
+        <br/><hr>
+        <p>Colocando uma imagem como botão:<input name="imagem" type="image" src="icone_enviar.png"></p><hr>
+        <p>Escolha um sexo:</p> <!--na função radio só pode marcaar uma opção -->
+        <p><input type="radio" name="sexo" value="F" />Feminino</p>
+        <p><input type="radio" name="sexo" value="M"/>Masculino</p>   
+        <hr>
+        <p>A seguir uma lista de opções:
+            <input list="marcas" name="marcas" />
+            <datalist id="marcas">
+                <option value="Nike">
+                <option value="Calvin Klein">
+                <option value="Lacoste">
+            </datalist></p><hr>
+            <p>Nesta tag, você poderá colocar texto ou imagens como um botão clicável. Este
+                comando pode ser utilizado fora de um formulário.</p>
+                <p><button type="button">
+                    <img src="icone_enviar.png" width="50" height="50">
+                </button></p>
+    </form>    
+</body>
+</html>
